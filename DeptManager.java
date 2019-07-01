@@ -5,17 +5,17 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class DeptManager implements Manager<Department> {
-	private List<Department> list = new ArrayList<>();
+public class DeptManager {
+	private List<Dept> list = new ArrayList<>();
 
-	public List<Department> getList() {
+	public List<Dept> getList() {
 		return list;
 	}
-	public void setList(List<Department> list) {
+	public void setList(List<Dept> list) {
 		this.list = list;
 	}
 	
-	public void update(Department newDept) {
+	public void update(Dept newDept) {
 		for (int i = 0;i< list.size();i++) 
 		{
 			if (list.get(i).getDeptno() == newDept.getDeptno()) {
@@ -27,26 +27,6 @@ public class DeptManager implements Manager<Department> {
 	}
 
 	public static void main(String[] args) {
-		DeptManager mgr = new DeptManager();
-		for(int i = 10; i< 100;i+=10) {
-			Department d = null;
-			if((i %20)==0)
-					d= new Department(i,"Dept"+i, "Hyd");
-			else
-				d= new Department(i,"Dept"+i, "Pune");
-			mgr.create(d);
-		}
-		//list.removeIf(pred);
-		mgr.list();
-		Department d= new Department(10,"HR","Blr");
-		mgr.update(d);
-		mgr.delete(e -> e.getDeptno() == 20);
-		mgr.list();
-		mgr.delete(e -> e.getDname().equals("Dept30" ));
-		mgr.list();
-		mgr.delete(e -> e.getLoc().equals("Hyd" ));
-	
-		mgr.list();
-	}
 
+	}
 }
