@@ -5,3 +5,6 @@ For Java 8
   2. Spefications
   https://docs.oracle.com/javase/specs/jls/se8/jls8.pdf
   https://docs.oracle.com/javase/specs/jvms/se8/jvms8.pdf
+General References
+https://www.journaldev.com › Java
+https://www.baeldung.com/java-streams
