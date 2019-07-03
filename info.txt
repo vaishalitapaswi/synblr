@@ -1,0 +1,7 @@
+    
+For Java 8 
+  1. Just to have a list of all new features 
+    https://www.oracle.com/technetwork/java/javase/8-whats-new-2157071.html
+  2. Spefications
+  https://docs.oracle.com/javase/specs/jls/se8/jls8.pdf
+  https://docs.oracle.com/javase/specs/jvms/se8/jvms8.pdf
